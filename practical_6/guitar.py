@@ -10,4 +10,11 @@ class Guitar:
         """Return a string format for a guitar object"""
         return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
+    def get_age(self):
+        """Get age of guitar from the current year 2020"""
+        age_of_guitar = 2020 - self.year
+        return age_of_guitar
 
+    def is_vintage(self):
+        """Check if a guitar is vintage based on its age"""
+        return self.get_age() >= 50
