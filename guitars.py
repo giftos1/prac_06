@@ -18,3 +18,12 @@ print()
 print("Name:\n\n...snip...")
 print()
 
+if guitars:  # Checks if the guitars list has at least 1 element.
+    print("These are my guitars:")
+    for i, guitar in enumerate(guitars, 1):
+        vintage_string = ""
+        if guitar.is_vintage():  # Check if a guitar is vintage
+            vintage_string = "(vintage)"
+        print("Guitar {0}: {1.name} ({1.year}), worth ${1.cost:10,.2f} {2}".format(i, guitar, vintage_string))
+else:
+    print("No guitars :( Quick, go and buy one!")  # Print the output if guitars list is empty
