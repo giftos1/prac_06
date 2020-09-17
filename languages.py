@@ -11,5 +11,5 @@ print(python)
 programming_languages = [ruby, python, visual_basic]
 print("The dynamically typed languages are:")
 for code_name in programming_languages:
-    if code_name.is_dynamic():
+    if code_name.is_dynamic():#checks if the code is dynamic
         print(code_name.language)
